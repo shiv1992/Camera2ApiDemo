@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/black">
+
+    <com.jsibbold.zoomage.ZoomageView
+        android:id="@+id/myZoomageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:zoomage_restrictBounds="false"
+        app:zoomage_animateOnReset="true"
+        app:zoomage_autoResetMode="UNDER"
+        app:zoomage_autoCenter="true"
+        app:zoomage_zoomable="true"
+        app:zoomage_translatable="true"
+        app:zoomage_minScale="0.6"
+        app:zoomage_maxScale="8"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:id="@+id/leftImage"
+            android:layout_width="40dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/ic_keyboard_arrow_left_white_24dp"/>
+
+        <ImageView
+            android:id="@+id/rightImage"
+            android:layout_width="40dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="30dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_keyboard_arrow_right_white_24dp"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+       android:shape="oval">
+
+    <corners
+        android:bottomRightRadius="40dp"
+        android:radius="40dp" />
+    <!--If your shape requires only one solid color-->
+    <solid
+        android:color="@android:color/transparent" />
+
+    <size
+        android:width="60dp"
+        android:height="60dp" />
+
+    <!--Use android:dashWidth="2dp" and android:dashGap="2dp"
+    to add dashes to your stroke-->
+    <stroke
+        android:width="5dp"
+        android:color="@android:color/white" />
+</shape>
